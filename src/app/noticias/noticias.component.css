@@ -30,3 +30,9 @@
     font-size: 1.2rem;
     text-shadow: 2px 1.5px 4px black;
 }
+
+.erro p {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}

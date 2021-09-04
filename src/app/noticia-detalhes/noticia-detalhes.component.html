@@ -3,6 +3,9 @@
 <h1 class="text-center fw-bold mb-4">{{noticia.titulo}}</h1>
 
 <div class="row justify-content-md-center">
+    <div class="erro text-center" *ngIf="!noticia.cod_noticia">
+        <p>Um erro inesperado ocorreu</p>
+    </div>
     <div class="col-12 col-md-9 h-md-50">
         <img class="image" src="{{noticia.img_url}}" alt="">
     </div>
