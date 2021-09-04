@@ -1,0 +1,14 @@
+<button class="voltar" (click)="voltar()">Voltar</button>
+
+<h1 class="text-center fw-bold mb-4">{{noticia.titulo}}</h1>
+
+<div class="row justify-content-md-center">
+    <div class="col-12 col-md-9 h-md-50">
+        <img class="image" src="{{noticia.img_url}}" alt="">
+    </div>
+    <div class="col-12 col-md-9">
+        <p class="px-4 mt-5 text-justify">
+            {{noticia.texto}}
+        </p>
+    </div>
+</div>

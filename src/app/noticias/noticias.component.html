@@ -1,0 +1,11 @@
+<h1 class="text-center fw-bold  my-4">Noticias</h1>
+
+<div class="row container-fluid p-0 m-0 justify-content-md-center">
+    <a class="col-12 col-md-5 p-0 m-0 m-md-2 d-block" *ngFor="let noticia of noticias" routerLink="/noticia/{{noticia.cod_noticia}}">
+        <div class="background m-0">
+            <span class="resumo p-2">{{noticia.resumo}}</span>
+            <div class="image" style="background-image: url({{noticia.img_url}});"></div>
+        </div>
+    </a>
+    
+</div>

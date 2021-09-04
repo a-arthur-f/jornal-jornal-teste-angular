@@ -1,0 +1,36 @@
+.image {
+    width: 100%;
+    height: 100%px;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+.voltar {
+    color: white;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    font-weight: bold;
+    background-color: #a6130a;
+    font-size: .8rem;
+    border: none;
+    width: 5rem;
+    height: 1.6rem;
+    border-radius: .5rem;
+}
+
+
+@media (min-width: 768px) {
+    p {
+        font-size: 1.4rem;
+    }
+
+    .voltar {
+        font-size: 1.1rem;
+        width: 6rem;
+        height: 2rem;
+        top: 22px
+    }
+}

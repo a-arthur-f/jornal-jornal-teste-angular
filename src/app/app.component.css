@@ -1,0 +1,33 @@
+header {
+    background-color: #c4170c;
+    color: white;
+}
+
+main {
+    min-height: 68vh;
+}
+
+footer {
+    background-color: #c4170c;
+    color: white;
+    padding: 0 .5rem .5rem .5rem;
+}
+
+footer .titulo {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: .4rem;
+}
+
+footer .sub {
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
