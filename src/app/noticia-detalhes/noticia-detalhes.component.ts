@@ -28,12 +28,17 @@ export class NoticiaDetalhesComponent implements OnInit {
 
   ngOnInit(): void {
     this.get();
+    console.log(this.noticia.dt_criacao)
   }
 
   get() {
     const id = this.route.snapshot.paramMap.get('id');
     this.noticiasService.getNoticia(Number(id))
-    .subscribe(noticia => this.noticia = noticia);
+    .subscribe(noticia =>  {
+      this.noticia = noticia;
+      this.noticia.dt_criacao = new Date(this.noticia.dt_criacao).toLocaleDateString();
+      this.noticia.dt_atualizacao = new Date(this.noticia.dt_atualizacao).toLocaleDateString();
+    })
   }
 
   voltar() {
